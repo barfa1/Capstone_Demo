@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="UserName" value="barfashubham1@gmail.com"/>
+    <parameter name="Address" value="Indore"/>
+    <parameter name="Lname" value="Varfa"/>
+    <parameter name="Fname" value="Shubham"/>
+    <parameter name="Age" value="23"/>
+    <parameter name="Password" value="12345"/>
+    <classes>
+      <class name="tests.SignupTest">
+        <methods>
+          <include name="DoSignUp" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.SignupTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
