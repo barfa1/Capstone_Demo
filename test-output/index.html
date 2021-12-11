@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +100,16 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.AddToCartTest" hash-for-method="DoAddToCart(barfashubham1@gmail.com, 12345)">DoAddToCart(barfashubham1@gmail.com, 12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.CheckoutAndOrderTest" hash-for-method="DoCheckoutAndOrder(barfashubham1@gmail.com, 12345)">DoCheckoutAndOrder(barfashubham1@gmail.com, 12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SignupTest" hash-for-method="DoSignUp(barfashubham1@gmail.com, 12345, Shubham, Varfa, 23, Indore)">DoSignUp(barfashubham1@gmail.com, 12345, Shubham, Varfa, 23, Indore)</a> <!-- method navigator-link -->
@@ -154,6 +164,38 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CheckoutAndOrderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DoCheckoutAndOrder(barfashubham1@gmail.com, 12345)">
+                  </a> <!-- DoCheckoutAndOrder(barfashubham1@gmail.com, 12345) -->
+                  <span class="method-name">DoCheckoutAndOrder</span>
+                  <span class="parameters">(barfashubham1@gmail.com, 12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.AddToCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DoAddToCart(barfashubham1@gmail.com, 12345)">
+                  </a> <!-- DoAddToCart(barfashubham1@gmail.com, 12345) -->
+                  <span class="method-name">DoAddToCart</span>
+                  <span class="parameters">(barfashubham1@gmail.com, 12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -174,6 +216,8 @@
     &lt;classes&gt;
       &lt;class name=&quot;tests.SignupTest&quot;/&gt;
       &lt;class name=&quot;tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;tests.AddToCartTest&quot;/&gt;
+      &lt;class name=&quot;tests.CheckoutAndOrderTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -187,7 +231,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -213,20 +257,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'DoSignUp')
-data.setCell(0, 2, 'tests.SignupTest')
-data.setCell(0, 3, 761);
+data.setCell(0, 1, 'DoCheckoutAndOrder')
+data.setCell(0, 2, 'tests.CheckoutAndOrderTest')
+data.setCell(0, 3, 879);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'PositiveLogin')
-data.setCell(1, 2, 'tests.LoginTest')
-data.setCell(1, 3, 365);
+data.setCell(1, 1, 'DoSignUp')
+data.setCell(1, 2, 'tests.SignupTest')
+data.setCell(1, 3, 796);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'DoAddToCart')
+data.setCell(2, 2, 'tests.AddToCartTest')
+data.setCell(2, 3, 537);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'PositiveLogin')
+data.setCell(3, 2, 'tests.LoginTest')
+data.setCell(3, 3, 300);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -241,9 +293,36 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">ReportSetup</span>
+                <br/>
+                <span class="ignored-method-name">ReportTeardown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.CheckoutAndOrderTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">ReportSetup</span>
+                <br/>
+                <span class="ignored-method-name">ReportTeardown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.AddToCartTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">ReportSetup</span>
+                <br/>
+                <span class="ignored-method-name">ReportTeardown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -252,28 +331,74 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.SignupTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">setup</span>
+                <span class="method-name">ReportSetup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">118 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DoSignUp(barfashubham1@gmail.com, 12345, Shubham, Varfa, 23, Indore)</span>
+                <span class="method-start">1029 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1828 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">1923 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">PositiveLogin(barfashubham1@gmail.com, 12345)</span>
+                <span class="method-start">2714 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">3016 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.AddToCartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">3103 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DoAddToCart(barfashubham1@gmail.com, 12345)</span>
+                <span class="method-start">3933 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">4471 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CheckoutAndOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">4564 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DoCheckoutAndOrder(barfashubham1@gmail.com, 12345)</span>
+                <span class="method-start">5319 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">6200 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.SignupTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">DoSignUp(barfashubham1@gmail.com, 12345, Shubham, Varfa, 23, Indore)</span>
-                <span class="method-start">919 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">PositiveLogin(barfashubham1@gmail.com, 12345)</span>
-                <span class="method-start">1684 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-test after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">2050 ms</span>
+                <span class="method-name">ReportTeardown</span>
+                <span class="method-start">6281 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

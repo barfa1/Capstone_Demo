@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import pages.SignUpPage;
 
-public class SignupTest {
+public class SignupTest extends BaseClass{
 	
 	@Test
 	@Parameters({"UserName","Password","Fname","Lname","Age","Address"})
@@ -17,9 +17,9 @@ public class SignupTest {
 			String Age ,
 			String Address
 			) {
-//		test = report.startTest("Positive Login Test");
+		test = report.startTest("Signup  Test");
 		SignUpPage signup = new SignUpPage();
 		signup.SignUp(UsernameVal ,Password ,Fname , Lname ,Age ,Address);
-//		report.endTest(test);
+		report.endTest(test);
 	}
 }
