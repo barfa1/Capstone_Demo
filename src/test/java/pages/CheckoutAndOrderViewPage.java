@@ -33,6 +33,9 @@ public class CheckoutAndOrderViewPage {
 	@FindBy(xpath="//tr/td[contains(text(),'HP Laptop ABC')]/following-sibling::td/a")
 	WebElement product_addto_cart;
 	
+	@FindBy(xpath="//tr/td[contains(text(),'21900')]")
+	WebElement product_price;
+	
 	@FindBy(linkText="Checkout Now")
 	WebElement cart_to_checkout;
 	
@@ -53,7 +56,7 @@ public class CheckoutAndOrderViewPage {
 
 //	================ class Methods =====================
 	
-	public void CheckoutAndOrder(String UsernameVal , String Password) {
+	public String CheckoutAndOrder(String UsernameVal , String Password) {
 		
 		navigate_to_login.click();
 		username.sendKeys(UsernameVal);
@@ -71,6 +74,7 @@ public class CheckoutAndOrderViewPage {
 		proceed_to_payement.click();
 		complete_checkout.click();
 		order_history.click();
+		return product_price.getText();
 		
 	}
 }

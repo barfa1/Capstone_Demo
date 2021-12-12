@@ -1,5 +1,6 @@
 package tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -13,7 +14,9 @@ public class CheckoutAndOrderTest extends BaseClass {
 	public void DoCheckoutAndOrder(String UsernameVal, String Password) {
 		test = report.startTest("Checkout Order Test");
 		CheckoutAndOrderViewPage checkout_and_order = new CheckoutAndOrderViewPage();
-		checkout_and_order.CheckoutAndOrder(UsernameVal,Password);
+		String actual_price = checkout_and_order.CheckoutAndOrder(UsernameVal,Password);
+		System.out.println(actual_price);
+		Assert.assertEquals(actual_price, "21900.00");
 		report.endTest(test);
 	}
 }
