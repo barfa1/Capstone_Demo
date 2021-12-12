@@ -1,34 +1,17 @@
 package tests;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.URL;
-import java.util.Properties;
-import java.util.concurrent.TimeUnit;
-
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
-
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 public class BaseClass {
-	
-	XSSFWorkbook wbook;
-    XSSFSheet sheet;
 	public static WebDriver driver;
 	
 	public static ExtentReports report;
@@ -37,9 +20,6 @@ public class BaseClass {
 	@BeforeTest
 	public void ReportSetup() throws IOException {
 		report = new ExtentReports("ExtentReport.html");
-//		FileInputStream fis = new FileInputStream("exceldata.xlsx");
-//		wbook = new XSSFWorkbook(fis);
-//		sheet = wbook.getSheet("data");
 		
 	}
 	
@@ -56,8 +36,7 @@ public class BaseClass {
 	}
 	@AfterMethod
 	public  void teardown(){
-		
-//		driver.manage().timeouts().implicitlyWait(4000, TimeUnit.MILLISECONDS);
+
 		driver.close();
 		driver.quit();
 
@@ -65,7 +44,6 @@ public class BaseClass {
 	
 	@AfterTest
 	public void ReportTeardown() throws IOException {
-//		wbook.close();
 		report.flush();
 		report.close();
 	}

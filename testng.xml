@@ -5,6 +5,8 @@
 
   <parameter name="UserName" value="barfashubham1@gmail.com"/>
   <parameter name="Password" value="12345"/>
+  <parameter name="WrongPassword" value="54321"/>
+  
   <parameter name="Fname" value="Shubham"/>
   <parameter name="Lname" value="Varfa"/>
   <parameter name="Age" value="23"/>
@@ -13,6 +15,7 @@
     
       <class name="tests.SignupTest"/> 
       <class name="tests.LoginTest"/>
+      <class name="tests.LogoutTest"/>
       <class name="tests.AddToCartTest"/> 
       <class name="tests.CheckoutAndOrderTest"/>
       

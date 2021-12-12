@@ -4,8 +4,9 @@ import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.relevantcodes.extentreports.LogStatus;
+
 import pages.CheckoutAndOrderViewPage;
-import pages.LoginPage;
 
 public class CheckoutAndOrderTest extends BaseClass {
 	
@@ -17,6 +18,7 @@ public class CheckoutAndOrderTest extends BaseClass {
 		String actual_price = checkout_and_order.CheckoutAndOrder(UsernameVal,Password);
 		System.out.println(actual_price);
 		Assert.assertEquals(actual_price, "21900.00");
+		test.log(LogStatus.PASS, "Checkout successful", "Checkout amount was "+actual_price);
 		report.endTest(test);
 	}
 }

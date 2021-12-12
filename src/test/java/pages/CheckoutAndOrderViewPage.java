@@ -5,13 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.relevantcodes.extentreports.ExtentTest;
 
 import tests.BaseClass;
 
 public class CheckoutAndOrderViewPage {
+	
 	WebDriver driver = BaseClass.driver;
-	ExtentTest test = BaseClass.test;
+	
 //	==================== WebElements ===================
 	
 	@FindBy(linkText="Login/Signup")
@@ -60,16 +60,10 @@ public class CheckoutAndOrderViewPage {
 		
 		navigate_to_login.click();
 		username.sendKeys(UsernameVal);
-//		test.log(LogStatus.PASS, "Entered username "+UsernameVal, "Successfully Enetered username");
-
 		password.sendKeys(Password);
-//		test.log(LogStatus.PASS, "Entered password "+Password, "Successfully Enetered Password");
-		
 		login.click();
 		home.click();
 		product_addto_cart.click();
-		
-		System.out.println(driver.getCurrentUrl());
 		cart_to_checkout.click();
 		proceed_to_payement.click();
 		complete_checkout.click();
