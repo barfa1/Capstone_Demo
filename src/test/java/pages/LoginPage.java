@@ -30,6 +30,9 @@ public class LoginPage {
 	@FindBy(linkText="Logout")
 	WebElement logout;
 	
+	@FindBy(linkText="Login/Signup")
+	WebElement logincheck;
+	
 //	==================== init Elements in Class constructor ==========
 	public LoginPage() {
 		PageFactory.initElements(driver, this);
@@ -47,15 +50,17 @@ public class LoginPage {
 	}
 	
 	@Parameters({"UserName","Password"})
-	public String Logout(String UsernameVal , String Password) {
+	public Boolean Logout(String UsernameVal , String Password) {
 		
 		navigate_to_login.click();
 		username.sendKeys(UsernameVal);
 		password.sendKeys(Password);
 		login.click();
 		logout.click();
-		return driver.getCurrentUrl();
-	
+		if(logincheck.getText().equals("Login/Signup"))
+		return true;
+		else
+		return false;
 		
 	}
 	
