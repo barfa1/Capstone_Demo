@@ -122,12 +122,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.LoginTest" hash-for-method="NegativeLogin(barfashubham1@gmail.com, 54321)">NegativeLogin(barfashubham1@gmail.com, 54321)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.LoginTest" hash-for-method="NegativeLogin(barfashubham1@gmail.com, 54321, http://localhost:8080/Section7LEP2/loginaction)">NegativeLogin(barfashubham1@gmail.com, 54321, http://localhost:8080/Section7LEP2/loginaction)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.LoginTest" hash-for-method="PositiveLogin(barfashubham1@gmail.com, 12345)">PositiveLogin(barfashubham1@gmail.com, 12345)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.LoginTest" hash-for-method="PositiveLogin(barfashubham1@gmail.com, 12345, http://localhost:8080/Section7LEP2/dashboard)">PositiveLogin(barfashubham1@gmail.com, 12345, http://localhost:8080/Section7LEP2/dashboard)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -166,18 +166,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="NegativeLogin(barfashubham1@gmail.com, 54321)">
-                  </a> <!-- NegativeLogin(barfashubham1@gmail.com, 54321) -->
+                  <a name="NegativeLogin(barfashubham1@gmail.com, 54321, http://localhost:8080/Section7LEP2/loginaction)">
+                  </a> <!-- NegativeLogin(barfashubham1@gmail.com, 54321, http://localhost:8080/Section7LEP2/loginaction) -->
                   <span class="method-name">NegativeLogin</span>
-                  <span class="parameters">(barfashubham1@gmail.com, 54321)</span>
+                  <span class="parameters">(barfashubham1@gmail.com, 54321, http://localhost:8080/Section7LEP2/loginaction)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="PositiveLogin(barfashubham1@gmail.com, 12345)">
-                  </a> <!-- PositiveLogin(barfashubham1@gmail.com, 12345) -->
+                  <a name="PositiveLogin(barfashubham1@gmail.com, 12345, http://localhost:8080/Section7LEP2/dashboard)">
+                  </a> <!-- PositiveLogin(barfashubham1@gmail.com, 12345, http://localhost:8080/Section7LEP2/dashboard) -->
                   <span class="method-name">PositiveLogin</span>
-                  <span class="parameters">(barfashubham1@gmail.com, 12345)</span>
+                  <span class="parameters">(barfashubham1@gmail.com, 12345, http://localhost:8080/Section7LEP2/dashboard)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -244,6 +244,8 @@
     &lt;parameter name=&quot;UserName&quot; value=&quot;barfashubham1@gmail.com&quot;/&gt;
     &lt;parameter name=&quot;Address&quot; value=&quot;Indore&quot;/&gt;
     &lt;parameter name=&quot;Lname&quot; value=&quot;Varfa&quot;/&gt;
+    &lt;parameter name=&quot;AssertNegativeURL&quot; value=&quot;http://localhost:8080/Section7LEP2/loginaction&quot;/&gt;
+    &lt;parameter name=&quot;AssertPositiveURL&quot; value=&quot;http://localhost:8080/Section7LEP2/dashboard&quot;/&gt;
     &lt;parameter name=&quot;Fname&quot; value=&quot;Shubham&quot;/&gt;
     &lt;parameter name=&quot;Age&quot; value=&quot;23&quot;/&gt;
     &lt;parameter name=&quot;Password&quot; value=&quot;12345&quot;/&gt;
@@ -297,27 +299,27 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'DoCheckoutAndOrder')
 data.setCell(0, 2, 'tests.CheckoutAndOrderTest')
-data.setCell(0, 3, 944);
+data.setCell(0, 3, 976);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'DoSignUp')
 data.setCell(1, 2, 'tests.SignupTest')
-data.setCell(1, 3, 781);
+data.setCell(1, 3, 777);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'DoAddToCart')
 data.setCell(2, 2, 'tests.AddToCartTest')
-data.setCell(2, 3, 550);
+data.setCell(2, 3, 562);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'PositiveLogin')
-data.setCell(3, 2, 'tests.LoginTest')
-data.setCell(3, 3, 365);
+data.setCell(3, 1, 'Logout')
+data.setCell(3, 2, 'tests.LogoutTest')
+data.setCell(3, 3, 390);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'NegativeLogin')
+data.setCell(4, 1, 'PositiveLogin')
 data.setCell(4, 2, 'tests.LoginTest')
-data.setCell(4, 3, 313);
+data.setCell(4, 3, 361);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'Logout')
-data.setCell(5, 2, 'tests.LogoutTest')
-data.setCell(5, 3, 307);
+data.setCell(5, 1, 'NegativeLogin')
+data.setCell(5, 2, 'tests.LoginTest')
+data.setCell(5, 3, 331);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -391,94 +393,94 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">123 ms</span>
+                <span class="method-start">112 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">DoSignUp(barfashubham1@gmail.com, 12345, Shubham, Varfa, 23, Indore)</span>
-                <span class="method-start">1019 ms</span>
+                <span class="method-start">1029 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">1803 ms</span>
+                <span class="method-start">1808 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">1889 ms</span>
+                <span class="method-start">1907 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">NegativeLogin(barfashubham1@gmail.com, 54321)</span>
-                <span class="method-start">2701 ms</span>
+                <span class="method-name">NegativeLogin(barfashubham1@gmail.com, 54321, http://localhost:8080/Section7LEP2/loginaction)</span>
+                <span class="method-start">2779 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">3015 ms</span>
+                <span class="method-start">3111 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">3088 ms</span>
+                <span class="method-start">3196 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">PositiveLogin(barfashubham1@gmail.com, 12345)</span>
-                <span class="method-start">3929 ms</span>
+                <span class="method-name">PositiveLogin(barfashubham1@gmail.com, 12345, http://localhost:8080/Section7LEP2/dashboard)</span>
+                <span class="method-start">4014 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">4295 ms</span>
+                <span class="method-start">4376 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.LogoutTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">4387 ms</span>
+                <span class="method-start">4471 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Logout(barfashubham1@gmail.com, 12345)</span>
-                <span class="method-start">5241 ms</span>
+                <span class="method-start">5451 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">5549 ms</span>
+                <span class="method-start">5842 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.AddToCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">5626 ms</span>
+                <span class="method-start">5927 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">DoAddToCart(barfashubham1@gmail.com, 12345)</span>
-                <span class="method-start">6439 ms</span>
+                <span class="method-start">6612 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">6989 ms</span>
+                <span class="method-start">7175 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CheckoutAndOrderTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">7072 ms</span>
+                <span class="method-start">7265 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">DoCheckoutAndOrder(barfashubham1@gmail.com, 12345)</span>
-                <span class="method-start">7914 ms</span>
+                <span class="method-start">8005 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">8859 ms</span>
+                <span class="method-start">8982 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.SignupTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">ReportTeardown</span>
-                <span class="method-start">8937 ms</span>
+                <span class="method-start">9070 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

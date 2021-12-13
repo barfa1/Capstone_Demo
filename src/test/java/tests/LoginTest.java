@@ -4,28 +4,33 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
 
+import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import pages.LoginPage;
 
 public class LoginTest extends BaseClass {
+	
+	public String expectedUrl = "http://localhost:8080/Section7LEP2/dashboard";
+	
 	@Test
-	@Parameters({"UserName","Password"})
-	public void PositiveLogin(String correctUser, String correctPass) {
+	@Parameters({"UserName","Password","AssertPositiveURL"})
+	public void PositiveLogin(String correctUser, String correctPass , String actualUrl) {
 		test = report.startTest("Positive Login Test");
 		LoginPage loginPage = new LoginPage();
 		loginPage.Login(correctUser,correctPass);
-		if(driver.getCurrentUrl().equals("http://localhost:8080/Section7LEP2/dashboard"))
+		Assert.assertEquals(actualUrl, "http://localhost:8080/Section7LEP2/dashboard");
 		test.log(LogStatus.PASS, "Login successful", "Login test run Successfully ");
 		report.endTest(test);
 	}
 	
 	@Test
-	@Parameters({"UserName","WrongPassword"})
-	public void NegativeLogin(String correctUser, String wrongPassword) {
+	@Parameters({"UserName","WrongPassword" , "AssertNegativeURL"})
+	public void NegativeLogin(String correctUser, String wrongPassword , String actualUrl ) {
 		test = report.startTest("Negative Login Test");
 		LoginPage loginPage = new LoginPage();
 		loginPage.Login(correctUser,wrongPassword);
-		if(driver.getCurrentUrl() != "http://localhost:8080/Section7LEP2/dashboard")
+		
+		Assert.assertEquals(actualUrl, "http://localhost:8080/Section7LEP2/loginaction");
 		test.log(LogStatus.PASS, "Login unsuccessful", "Negative Login test run Successfully ");
 		report.endTest(test);
 	}

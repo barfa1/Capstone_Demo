@@ -11,6 +11,8 @@
   <parameter name="Lname" value="Varfa"/>
   <parameter name="Age" value="23"/>
   <parameter name="Address" value="Indore"/>
+  <parameter name="AssertPositiveURL" value="http://localhost:8080/Section7LEP2/dashboard"/>
+  <parameter name="AssertNegativeURL" value="http://localhost:8080/Section7LEP2/loginaction"/>
     <classes>
     
       <class name="tests.SignupTest"/> 

@@ -8,16 +8,18 @@
     <parameter name="Fname" value="Shubham"/>
     <parameter name="Age" value="23"/>
     <parameter name="Password" value="12345"/>
+    <parameter name="WrongPassword" value="54321"/>
     <classes>
-      <class name="tests.CheckoutAndOrderTest">
+      <class name="tests.LoginTest">
         <methods>
           <include name="teardown"/>
+          <include name="NegativeLogin"/>
           <include name="ReportSetup"/>
           <include name="setup"/>
+          <include name="PositiveLogin"/>
           <include name="ReportTeardown"/>
-          <include name="DoCheckoutAndOrder" invocation-numbers="0"/>
         </methods>
-      </class> <!-- tests.CheckoutAndOrderTest -->
+      </class> <!-- tests.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

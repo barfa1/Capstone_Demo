@@ -37,23 +37,25 @@ public class LoginPage {
 
 //	================ class Methods =====================
 	@Parameters({"UserName","Password"})
-	public void Login(String UsernameVal , String Password) {
+	public String Login(String UsernameVal , String Password) {
 		
 		navigate_to_login.click();
 		username.sendKeys(UsernameVal);
 		password.sendKeys(Password);
 		login.click();
-		
+		return driver.getCurrentUrl();
 	}
 	
 	@Parameters({"UserName","Password"})
-	public void Logout(String UsernameVal , String Password) {
+	public String Logout(String UsernameVal , String Password) {
 		
 		navigate_to_login.click();
 		username.sendKeys(UsernameVal);
 		password.sendKeys(Password);
 		login.click();
 		logout.click();
+		return driver.getCurrentUrl();
+	
 		
 	}
 	
